@@ -28,5 +28,16 @@ class Program
         Console.WriteLine("Health: " + health);
         Console.WriteLine("Coins: " + coins);
         Console.WriteLine("Speed: " + speed);
+        //example of using variables-modification
+        coins = coins + 10;
+        Console.WriteLine("Coins after collecting: " + coins);
+        Console.WriteLine("Is Alive: " + isAlive);
+        Console.WriteLine("Damage Taken: " + damage);
+        //example of using variables in a loop
+        for (int i = 0; i < 5; i++)
+        {
+            health = health - damage;
+            Console.WriteLine("Health after taking damage: " + health);
+        }
     }
 }

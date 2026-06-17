@@ -42,6 +42,10 @@ class Program
         //example of using variables in a function
         int totalScore = CalculateScore(coins, health);
         Console.WriteLine("Total Score: " + totalScore);
+        //example of using variables to store user input
+        Console.WriteLine("Enter your name: ");
+        string userName = Console.ReadLine();
+        Console.WriteLine("Hello, " + userName + "!");
     }
     static int CalculateScore(int coins, int health)
     {

@@ -39,5 +39,12 @@ class Program
             health = health - damage;
             Console.WriteLine("Health after taking damage: " + health);
         }
+        //example of using variables in a function
+        int totalScore = CalculateScore(coins, health);
+        Console.WriteLine("Total Score: " + totalScore);
+    }
+    static int CalculateScore(int coins, int health)
+    {
+        return coins * 10 + health;
     }
 }

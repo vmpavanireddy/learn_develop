@@ -37,5 +37,19 @@ class day_3
         Console.WriteLine("After *= 2: " + h);
         h /= 4; // equivalent to h = h / 4
         Console.WriteLine("After /= 4: " + h);
+
+        //increment and decrement operators
+        //are used to increase or decrease the value of a variable by 1
+        //they include ++ (increment) and -- (decrement)
+        int i = 0;
+        Console.WriteLine("Initial value of i: " + i);
+        i++; // increment operator (post-increment)
+        Console.WriteLine("After i++: " + i);
+        ++i; // increment operator (pre-increment)
+        Console.WriteLine("After ++i: " + i);
+        i--; // decrement operator (post-decrement)
+        Console.WriteLine("After i--: " + i);
+        --i; // decrement operator (pre-decrement)
+        Console.WriteLine("After --i: " + i);
         }
 }

@@ -67,5 +67,22 @@ class day_3
         Console.WriteLine("Is a greater than or equal to b? " + isGreaterOrEqual);
         bool isLessOrEqual = a <= b; // less than or equal to operator
         Console.WriteLine("Is a less than or equal to b? " + isLessOrEqual);
+
+        //relational operators
+        //are used to compare two values and return a boolean result (true or false)
+        //they include == (equal to), != (not equal to), > (greater than), < (less than), >= (greater than or equal to), <= (less than or equal to) 
+        //in C#, comparison operators and relational operators are often used interchangeably, but they serve the same purpose of comparing values and returning boolean results.
+        
+        //logical operators
+        //are used to combine multiple boolean expressions and return a boolean result (true or false)
+        //they include && (logical AND), || (logical OR), ! (logical NOT)
+        bool logicalAnd = (a < b) && (c > 0); // logical AND
+        Console.WriteLine("Logical AND: " + logicalAnd);
+        
+        bool logicalOr = (a < b) || (c < 0); // logical OR
+        Console.WriteLine("Logical OR: " + logicalOr);
+
+        bool logicalNot = !(a < b); // logical NOT
+        Console.WriteLine("Logical NOT: " + logicalNot);
         }
 }

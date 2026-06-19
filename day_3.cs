@@ -24,5 +24,18 @@ class day_3
         int g = b % a; // modulus
         Console.WriteLine("Modulus: " + g);
 
+        //assignment operators
+        //are used to assign values to variables
+        //they include =, +=, -=, *=, /=, %=
+        int h = 5; // assignment operator
+        Console.WriteLine("Initial value of h: " + h);
+        h += 10; // equivalent to h = h + 10
+        Console.WriteLine("After += 10: " + h);
+        h -= 3; // equivalent to h = h - 3
+        Console.WriteLine("After -= 3: " + h);
+        h *= 2; // equivalent to h = h * 2
+        Console.WriteLine("After *= 2: " + h);
+        h /= 4; // equivalent to h = h / 4
+        Console.WriteLine("After /= 4: " + h);
         }
 }

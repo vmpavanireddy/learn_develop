@@ -100,5 +100,16 @@ class day_3
         Console.WriteLine("Left Shift: " + leftShift);
         int rightShift = a >> 2; // right shift
         Console.WriteLine("Right Shift: " + rightShift);
+
+        //ternary operator
+        //is a shorthand for an if-else statement that returns a value based on a condition
+        //it has the syntax: condition ? value_if_true : value_if_false
+        int ternaryResult = (a < b) ? a : b; // ternary operator
+        Console.WriteLine("Ternary Operator Result: " + ternaryResult);
+        //in this example, the condition (a < b) is true, so the value of a is returned and assigned to ternaryResult. If the condition were false, the value of b would be returned instead.
+        //the ternary operator is a concise way to write simple conditional expressions and can help improve code readability when used appropriately.
+        //it is important to use the ternary operator judiciously, as overusing it or using it in complex expressions can make code harder to read and understand.
+        //in summary, operators are essential components of programming languages that allow us to perform various operations on data. Understanding the different types of operators and how to use them effectively is crucial for writing efficient and readable code in C#.
+        //operators are fundamental to programming and are used in almost every aspect of coding, from simple calculations to complex logic. By mastering the use of operators, you can enhance your programming skills and create more powerful and efficient applications.
         }
 }

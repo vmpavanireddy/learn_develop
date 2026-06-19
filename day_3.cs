@@ -51,5 +51,21 @@ class day_3
         Console.WriteLine("After i--: " + i);
         --i; // decrement operator (pre-decrement)
         Console.WriteLine("After --i: " + i);
+
+        //comparison operators
+        //are used to compare two values and return a boolean result (true or false)
+        //they include == (equal to), != (not equal to), > (greater than), < (less than), >= (greater than or equal to), <= (less than or equal to) 
+        bool isEqual = a == b; // equal to operator
+        Console.WriteLine("Is a equal to b? " + isEqual);
+        bool isNotEqual = a != b; // not equal to operator
+        Console.WriteLine("Is a not equal to b? " + isNotEqual);
+        bool isLess = a < b; // less than operator
+        Console.WriteLine("Is a less than b? " + isLess);
+        bool isGreater = a > b; // greater than operator
+        Console.WriteLine("Is a greater than b? " + isGreater);
+        bool isGreaterOrEqual = a >= b; // greater than or equal to operator
+        Console.WriteLine("Is a greater than or equal to b? " + isGreaterOrEqual);
+        bool isLessOrEqual = a <= b; // less than or equal to operator
+        Console.WriteLine("Is a less than or equal to b? " + isLessOrEqual);
         }
 }

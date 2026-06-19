@@ -84,5 +84,21 @@ class day_3
 
         bool logicalNot = !(a < b); // logical NOT
         Console.WriteLine("Logical NOT: " + logicalNot);
+
+        //bitwise operators
+        //are used to perform bitwise operations on integer data types
+        //they include & (bitwise AND), | (bitwise OR), ^ (bitwise XOR), ~ (bitwise NOT), << (left shift), >> (right shift)
+        int bitwiseAnd = a & b; // bitwise AND
+        Console.WriteLine("Bitwise AND: " + bitwiseAnd);
+        int bitwiseOr = a | b; // bitwise OR
+        Console.WriteLine("Bitwise OR: " + bitwiseOr);
+        int bitwiseXor = a ^ b; // bitwise XOR
+        Console.WriteLine("Bitwise XOR: " + bitwiseXor);
+        int bitwiseNot = ~a; // bitwise NOT
+        Console.WriteLine("Bitwise NOT: " + bitwiseNot);
+        int leftShift = a << 2; // left shift
+        Console.WriteLine("Left Shift: " + leftShift);
+        int rightShift = a >> 2; // right shift
+        Console.WriteLine("Right Shift: " + rightShift);
         }
 }

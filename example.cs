@@ -160,3 +160,16 @@ for (int i = 0; i < numbers_7.Length; i++)
 {
     Console.Write(numbers_7[i] + " ");
 }
+
+int[] numbers_8 = { 10, 20, 30, 40, 50 };
+
+int sum_1 = 0;
+
+for (int i = 0; i < numbers_8.Length; i++)
+{
+    sum_1 += numbers_8[i];
+}
+
+double average = (double)sum_1 / numbers_8.Length;
+
+Console.WriteLine("Average: " + average);

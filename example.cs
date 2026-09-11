@@ -48,3 +48,24 @@ for (int i = num_2.Length - 1; i >= 0; i--)
 {
     Console.WriteLine(num_2[i]);
 }
+//Searching
+
+int[] numbers_3 = { 10, 20, 30, 40, 50 };
+
+int target = 30;
+bool found = false;
+
+for (int i = 0; i < numbers_3.Length; i++)
+{
+    if (numbers_3[i] == target)
+    {
+        Console.WriteLine("Found at index: " + i);
+        found = true;
+        break;
+    }
+}
+
+if (!found)
+{
+    Console.WriteLine("Not found");
+}

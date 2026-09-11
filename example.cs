@@ -42,3 +42,9 @@ for (int i = 0; i < numb_1.Length; i++)
 }
 
 Console.WriteLine("Sum: " + sum);
+int[] num_2 = { 10, 20, 30, 40, 50 };
+
+for (int i = num_2.Length - 1; i >= 0; i--)
+{
+    Console.WriteLine(num_2[i]);
+}

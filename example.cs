@@ -139,3 +139,24 @@ for (int i = 0; i < numbers_6.Length; i++)
 {
     Console.Write(numbers_6[i] + " ");
 }
+
+int[] numbers_7 = { 5, 2, 8, 1, 3 };
+
+for (int i = 1; i < numbers_7.Length; i++)
+{
+    int current = numbers_7[i];
+    int j = i - 1;
+
+    while (j >= 0 && numbers_7[j] > current)
+    {
+        numbers_7[j + 1] = numbers_7[j];
+        j--;
+    }
+
+    numbers_7[j + 1] = current;
+}
+
+for (int i = 0; i < numbers_7.Length; i++)
+{
+    Console.Write(numbers_7[i] + " ");
+}

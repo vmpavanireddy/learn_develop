@@ -69,3 +69,28 @@ if (!found)
 {
     Console.WriteLine("Not found");
 }
+int[] numbers_4 = { 10, 20, 30, 40, 50 };
+
+int target_1 = 40;
+
+int left = 0;
+int right = numbers_4.Length - 1;
+
+while (left <= right)
+{
+    int middle = (left + right) / 2;
+
+    if (numbers_4[middle] == target_1)
+    {
+        Console.WriteLine("Found at index: " + middle);
+        break;
+    }
+    else if (numbers_4[middle] < target_1)
+    {
+        left = middle + 1;
+    }
+    else
+    {
+        right = middle - 1;
+    }
+}

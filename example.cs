@@ -32,3 +32,13 @@ for (int i = 1; i < numb.Length; i++)
 }
 
 Console.WriteLine("Smallest: " + smallest);
+int[] numb_1 = { 10, 20, 30, 40, 50 };
+
+int sum = 0;
+
+for (int i = 0; i < numb_1.Length; i++)
+{
+    sum += numb_1[i];
+}
+
+Console.WriteLine("Sum: " + sum);

@@ -19,3 +19,16 @@ for (int i = 1; i < num.Length; i++)
 
 Console.WriteLine("Largest: " + largest);
 
+int[] numb = { 25, 10, 45, 30, 15 };
+
+int smallest = numb[0];
+
+for (int i = 1; i < numb.Length; i++)
+{
+    if (numb[i] < smallest)
+    {
+        smallest = numb[i];
+    }
+}
+
+Console.WriteLine("Smallest: " + smallest);

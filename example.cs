@@ -94,3 +94,24 @@ while (left <= right)
         right = middle - 1;
     }
 }
+
+//Sorting
+int[] numbers_5 = { 5, 2, 8, 1, 3 };
+
+for (int i = 0; i < numbers_5.Length - 1; i++)
+{
+    for (int j = 0; j < numbers_5.Length - 1 - i; j++)
+    {
+        if (numbers_5[j] > numbers_5[j + 1])
+        {
+            int temp = numbers_5[j];
+            numbers_5[j] = numbers_5[j + 1];
+            numbers_5[j + 1] = temp;
+        }
+    }
+}
+
+for (int i = 0; i < numbers_5.Length; i++)
+{
+    Console.Write(numbers_5[i] + " ");
+}

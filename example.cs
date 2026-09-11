@@ -115,3 +115,27 @@ for (int i = 0; i < numbers_5.Length; i++)
 {
     Console.Write(numbers_5[i] + " ");
 }
+
+int[] numbers_6 = { 5, 2, 8, 1, 3 };
+
+for (int i = 0; i < numbers_6.Length - 1; i++)
+{
+    int smallestIndex = i;
+
+    for (int j = i + 1; j < numbers_6.Length; j++)
+    {
+        if (numbers_6[j] < numbers_6[smallestIndex])
+        {
+            smallestIndex = j;
+        }
+    }
+
+    int temp = numbers_6[i];
+    numbers_6[i] = numbers_6[smallestIndex];
+    numbers_6[smallestIndex] = temp;
+}
+
+for (int i = 0; i < numbers_6.Length; i++)
+{
+    Console.Write(numbers_6[i] + " ");
+}

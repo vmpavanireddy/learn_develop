@@ -173,3 +173,9 @@ for (int i = 0; i < numbers_8.Length; i++)
 double average = (double)sum_1 / numbers_8.Length;
 
 Console.WriteLine("Average: " + average);
+//Array — Copying
+int[] original = { 1, 2, 3, 4, 5 };
+int[] copy = new int[original.Length];  
+copy = (int[])original.Clone();
+Console.WriteLine("Original: " + string.Join(", ", original));
+Console.WriteLine("Copy: " + string.Join(", ", copy));

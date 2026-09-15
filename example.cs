@@ -179,3 +179,18 @@ int[] copy = new int[original.Length];
 copy = (int[])original.Clone();
 Console.WriteLine("Original: " + string.Join(", ", original));
 Console.WriteLine("Copy: " + string.Join(", ", copy));
+//Array — Resizing
+int[] originalArray = { 1, 2, 3, 4, 5 };
+Array.Resize(ref originalArray, 8);
+originalArray[5] = 6;
+originalArray[6] = 7;
+originalArray[7] = 8;
+Console.WriteLine("Resized Array: " + string.Join(", ", originalArray));
+//Array — Searching
+int[] searchArray = { 10, 20, 30, 40, 50 };
+int searchTarget = 30;
+int searchIndex = Array.IndexOf(searchArray, searchTarget);
+if (searchIndex != -1)
+{
+    Console.WriteLine("Found at index: " + searchIndex);
+}

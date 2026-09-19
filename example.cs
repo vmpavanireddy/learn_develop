@@ -194,3 +194,19 @@ if (searchIndex != -1)
 {
     Console.WriteLine("Found at index: " + searchIndex);
 }
+//Array — Sorting
+int[] sortArray = { 5, 2, 8, 1, 3 };
+Array.Sort(sortArray);
+Console.WriteLine("Sorted Array: " + string.Join(", ", sortArray)); 
+//Array — Reversing
+int[] reverseArray = { 1, 2, 3, 4, 5 };
+Array.Reverse(reverseArray);
+Console.WriteLine("Reversed Array: " + string.Join(", ", reverseArray));    
+//Array — Searching with Binary Search
+int[] binarySearchArray = { 10, 20, 30, 40, 50 };
+int binarySearchTarget = 40;
+int binarySearchIndex = Array.BinarySearch(binarySearchArray, binarySearchTarget);
+if (binarySearchIndex >= 0)
+{
+    Console.WriteLine("Found at index: " + binarySearchIndex);
+}

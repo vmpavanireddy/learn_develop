@@ -210,3 +210,9 @@ if (binarySearchIndex >= 0)
 {
     Console.WriteLine("Found at index: " + binarySearchIndex);
 }
+//Array — Finding Minimum and Maximum
+int[] minMaxArray = { 10, 20, 30, 40, 50 };
+int minValue = minMaxArray.Min();
+int maxValue = minMaxArray.Max();
+Console.WriteLine("Minimum: " + minValue);
+Console.WriteLine("Maximum: " + maxValue);  

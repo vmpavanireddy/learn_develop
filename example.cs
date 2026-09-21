@@ -222,3 +222,11 @@ int sumValue = sumAvgArray.Sum();
 double averageValue = sumAvgArray.Average();
 Console.WriteLine("Sum: " + sumValue);
 Console.WriteLine("Average: " + averageValue);
+//Array — Finding Index of an Element
+int[] indexArray = { 10, 20, 30, 40, 50 };
+int indexTarget = 30;   
+int indexFound = Array.IndexOf(indexArray, indexTarget);
+if (indexFound != -1)
+{
+    Console.WriteLine("Found at index: " + indexFound);
+}

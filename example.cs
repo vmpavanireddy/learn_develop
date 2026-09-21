@@ -238,3 +238,15 @@ if (lastIndexFound != -1)
 {
     Console.WriteLine("Last found at index: " + lastIndexFound);
 }
+//Array — Checking if an Element Exists
+int[] existsArray = { 10, 20, 30, 40, 50 };
+int existsTarget = 30;  
+bool exists = Array.Contains(existsArray, existsTarget);
+if (exists)
+{
+    Console.WriteLine("Element exists in the array.");
+}
+else
+{
+    Console.WriteLine("Element does not exist in the array.");
+}

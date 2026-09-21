@@ -216,3 +216,9 @@ int minValue = minMaxArray.Min();
 int maxValue = minMaxArray.Max();
 Console.WriteLine("Minimum: " + minValue);
 Console.WriteLine("Maximum: " + maxValue);  
+//Array — Finding Sum and Average
+int[] sumAvgArray = { 10, 20, 30, 40,   50 };
+int sumValue = sumAvgArray.Sum();
+double averageValue = sumAvgArray.Average();
+Console.WriteLine("Sum: " + sumValue);
+Console.WriteLine("Average: " + averageValue);

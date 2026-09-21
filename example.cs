@@ -230,3 +230,11 @@ if (indexFound != -1)
 {
     Console.WriteLine("Found at index: " + indexFound);
 }
+//Array — Finding Last Index of an Element
+int[] lastIndexArray = { 10, 20, 30, 40, 50, 30 };
+int lastIndexTarget = 30;
+int lastIndexFound = Array.LastIndexOf(lastIndexArray, lastIndexTarget);    
+if (lastIndexFound != -1)
+{
+    Console.WriteLine("Last found at index: " + lastIndexFound);
+}

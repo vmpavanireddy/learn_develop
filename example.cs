@@ -250,3 +250,18 @@ else
 {
     Console.WriteLine("Element does not exist in the array.");
 }
+//Array — Finding All Occurrences of an Element
+int[] occurrencesArray = { 10, 20, 30, 40, 50, 30 };
+int occurrencesTarget = 30; 
+List<int> occurrencesIndices = new List<int>();
+for (int i = 0; i < occurrencesArray.Length; i++)
+{
+    if (occurrencesArray[i] == occurrencesTarget)
+    {
+        occurrencesIndices.Add(i);
+    }
+}
+if (occurrencesIndices.Count > 0)
+{
+    Console.WriteLine("Found at indices: " + string.Join(", ", occurrencesIndices));
+}   

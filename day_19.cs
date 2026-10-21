@@ -20,5 +20,10 @@ class day_19
         }
 
         Console.WriteLine("Total score: " + total);
+        // Calculate the average score
+        double average = total / (double)(scores.GetLength(0) * scores.GetLength(1));
+        Console.WriteLine("Average score: " + average);
+        // Determine pass or fail based on average score
+        Console.WriteLine(average >= 50 ? "Result: Pass" : "Result: Fail");
     }
 }

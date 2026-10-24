@@ -29,7 +29,7 @@ class day_19
         int[][] jaggedScores = new int[2][];
         jaggedScores[0] = new int[] { 80, 90, 85 };
         jaggedScores[1] = new int[] { 75, 88, 92 };
-        console.WriteLine("Jagged array scores:");
+        Console.WriteLine("Jagged array scores:");
         for (int i = 0; i < jaggedScores.Length; i++)
         {
             for (int j = 0; j < jaggedScores[i].Length; j++)

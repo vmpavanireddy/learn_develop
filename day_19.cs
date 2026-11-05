@@ -38,5 +38,17 @@ class day_19
             }
             Console.WriteLine();
         }
+        // Calculate the total and average for the jagged array
+        total = 0;
+        for (int i = 0; i < jaggedScores.Length; i++)
+        {
+            for (int j = 0; j < jaggedScores[i].Length; j++)
+            {
+                total += jaggedScores[i][j];
+            }
+        }
+        double average = total / (double)(jaggedScores.Length * jaggedScores[0].Length);
+        Console.WriteLine("Total score: " + total);
+        Console.WriteLine("Average score: " + average);
     }
 }

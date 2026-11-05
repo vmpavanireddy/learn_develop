@@ -50,5 +50,25 @@ class day_19
         double average = total / (double)(jaggedScores.Length * jaggedScores[0].Length);
         Console.WriteLine("Total score: " + total);
         Console.WriteLine("Average score: " + average);
+        // Determine pass or fail based on average score for jagged array
+        Console.WriteLine(average >= 50 ? "Result: Pass" : "Result: Fail");
+        // Example of a 3D array
+        int[,,] threeDScores = new int[2, 2, 3]
+        {
+            { { 80, 90, 85 }, { 75, 88, 92 } },
+            { { 70, 85, 90 }, { 60, 78, 88 } }
+        };
+        Console.WriteLine("3D array scores:");
+        for (int i = 0; i < threeDScores.GetLength(0); i++)
+        {
+            for (int j = 0; j < threeDScores.GetLength(1); j++)
+            {
+                for (int k = 0; k < threeDScores.GetLength(2); k++)
+                {
+                    Console.Write(threeDScores[i, j, k] + " "); 
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
